@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body {
+        background-image: url("https://i.ibb.co/bb6MHQH/locandina-spring-2024-copia.jpg");
+        background-repeat: repeat;
+        background-size: cover;
+        height: 100%;
+        width: auto;
+        background-position: top;
+        margin: auto;
+      }
+
+      //.brochure img{
+        //float: left;
+        //max-width: 85%;
+       // width: 200px;
+        //height: auto;
+       // border-radius: 50%;
+
+     //}
+      .pulsanti {
+        display: flex;
+        flex-wrap: wrap;
+
+      }
+
+      .puls {
+        flex: 100%;
+        max-width: 100%;
+        padding-bottom: 3vh; 
+
+      }
+
+      .button-55 {
+        align-self: center;
+        background-color: #00A86B;
+        //background: rgba(0,0,0,0.5);
+        background-image: none;
+        background-position: 0 100%;
+        background-repeat: repeat no-repeat;
+        background-size: 4px 3px;
+        border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+        border-style: solid;
+        border-width: 2px;
+        box-shadow: rgba(0,168,107, 0.5) 15px 28px 25px -18px;
+        box-sizing: border-box;
+        color: #41403e;
+        cursor: pointer;
+        display: inline-block;
+        font-family: Neucha, sans-serif;
+        font-size: 1rem;
+        height: 10vh;
+        width: 5vw;
+        line-height: 23px;
+        outline: none;
+        padding: 2px;
+        text-decoration: none;
+        transition: all 235ms ease-in-out;
+        border-bottom-left-radius: 10px 10px;
+        border-bottom-right-radius: 10px 10px;
+        border-top-left-radius: 10px 10px;
+        border-top-right-radius: 10px 10px;
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+      }
+
+      .button-55:hover {
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+        transform: translate3d(0, 2px, 0);
+      }
+
+      .button-55:focus {
+        box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+      }
+      
+
+    </style>
+    <base target="_top">
+  </head>
+  <body>
+    <?var url = getScriptUrl();?>
+    <br />
+    <div class="pulsanti">
+      <div class="puls">
+        <button class="button-55" role="button"><a href='<?=url?>?page=home'><img src="https://www.iconpacks.net/icons/2/free-home-icon-2502-thumb.png"  border="0" style="max-width:80%;height:auto;"/></a></button>
+      </div>  
+      <div class="puls">
+        <button class="button-55" role="button"><a href='<?=url?>?page=classifica'><img src="https://cdn-icons-png.flaticon.com/512/2817/2817941.png"  border="0" style="max-width:80%;height:auto;"/></a></button>
+      </div>  
+      <div class="puls">
+        <button class="button-55" role="button"><a href='<?=url?>?page=statistiche'><img src="https://cdn-icons-png.flaticon.com/512/1275/1275364.png"  border="0" style="max-width:80%;height:auto;"/></a></button>
+      </div>
+    </div>     
+    <br />  
+  </body>
+</html>
